@@ -1,0 +1,840 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #273847;
+}
+
+/*----------------------- Cabeçalho (Header) -----------------------*/
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1400px;
+    margin: 0 auto 50px;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu-btn {
+    grid-column: 1 / 3;
+    background-color: black;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    margin: 28px 55px
+}
+
+.menu-icon {
+    width: 100px;
+    position: relative;
+    bottom: 16px;
+    right: 16px;
+}
+
+.search-bar {
+    grid-column: 4 / 9;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.bg-search {
+    width: 650px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid #FFA630;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    margin-right: 33px;
+}
+
+.search-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-left: 17.35px;
+    cursor: pointer;
+    color: #FFA630;
+}
+
+.search-input {
+    all: unset;
+    background-color: black;
+    border: none;
+    width: 500px;
+    color: #FFA630;
+    font-size: 20px;
+}
+
+.button-header {
+    grid-column: 10 /13;
+    display: flex;
+}
+
+.search-input::placeholder {
+    color: #FFA630;
+}
+
+.user-button {
+    grid-column: 12/-1;
+    margin-top: 30px;
+}
+
+.user-page{
+    width: 67px;
+    height: 67px;
+    background-color: #FFA630;
+    border-radius: 50%;
+    border: 8px solid black;
+}
+
+/*----------------------- Conteúdo Princial (Main) -----------------------*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+/*----------------------- Botões de Navegação -----------------------*/
+
+.nav_video {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.nav_video button {
+    width: 240px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+/*----------------------- Painel Princial -----------------------*/
+
+.main-painel {
+    grid-column: span 12;
+    display: flex;
+    align-items: center;
+    padding: 75px 40px;
+    margin: 0 auto;
+    border: 3px solid #13678A ;
+    border-radius: 20px;
+    width: 1440px;
+    height: 798px;
+    background-color: rgba(0, 0, 0, 0.575);
+    gap: 20px;
+}
+
+/*----------------------- Playlist Section -----------------------*/
+
+.playlist-section {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 604px;
+    background-color: #086788;
+    border-radius: 20px;
+}
+
+.head-playlist {
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    height: 44px;
+}
+
+.head-playlist h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.playlist-content {
+    display: flex;
+    justify-content: center;
+}
+
+.playlist-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.button-playlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #0808087e;
+    width: 230px;
+    height: 40px;
+}
+
+.playlist-list a {
+    padding: 5px 72px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.button-playlist:hover {
+    background-color: #8DB1AB;
+}
+
+/*----------------------- Vídeo Section -----------------------*/
+
+.video-section {
+    width: 692px;
+    height: 604px;
+}
+
+.video-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 692px;
+    height: 486px;
+    background-color: #086788 ;
+}
+
+.video-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 82px;
+    color: #8DB1AB ;
+}
+
+.info-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 692px;
+    height: 36px;
+    background-color: #8DB1AB;
+}
+
+.info-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 96px;
+    height: 22px;
+    font-size: 22px;
+}
+
+.autor-information {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#autor-link {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.video-review {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 110px;
+    height: 22px;
+}
+
+/*----------------------- Comment Section -----------------------*/
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 290px;
+    height: 604px;
+    background-color: #086788;
+}
+
+.head-comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0 ;
+    width: 290px;
+    height: 54px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+}
+
+.foot-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 290px;
+    height: 68px;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.foot-comment input {
+    border-radius: 5px;
+    width: 212px;
+    height: 30px;
+}
+
+.foot-comment input::placeholder {
+    padding-left: 28px;
+    color: #086788;
+}
+
+.foot-comment button {
+    height: 46px;
+    width: 46px;
+    border: 0;
+    border-radius: 50%;
+    font-size: 26px;
+    background-color: black;
+}
+
+/*----------------------- Cabeçalho (Footer) -----------------------*/
+
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.links{
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: center;
+    gap: 220px;
+    padding-top: 30px;
+  }
+  
+  .links a{
+    color: #8DB1AB;
+  }
+  
+  .autores {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 25px 0;
+    font-size: 12px;
+  }
+
+/*----------------------- Página de Comunidade -----------------------*/
+
+.painel_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 352px;
+    height: 884px;
+    margin-bottom: 50px;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0.50);
+    border: solid 2px #8DB1AB;
+    border-radius: 20px;
+}
+
+.painel_nav nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #8DB1AB;
+    margin-top: 50px;
+}
+
+.painel_nav nav ul li {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+
+}
+
+.painel_content {
+    width: 1074px;
+    height: 884px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.50);
+    border: solid 2px #8DB1AB;
+    border-radius: 20px;
+}
+
+.painel_content_cabecalho {
+    color: #8DB1AB;
+    padding: 40px;
+
+}
+
+.painel_content_cabecalho h1 {
+    font-size: 40px;
+}
+
+.painel_content_cabecalho p {
+    font-size: 20px;
+}
+
+.painel_content_iten {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 40px 20px 40px;
+    color: #8DB1AB;
+}
+
+.content_iten_title_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.content_iten_title {
+    font-size: 24px;
+    color: #5D5791;
+}
+
+.painel_content_iten p {
+    font-size: 20px;
+}
+
+.review_iten {
+    display: flex;
+    align-items: center;
+}
+.review_iten button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+/*----------------------- Página de Ajuda -----------------------*/
+.main_help {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+    margin-bottom: 60px;
+}
+
+.painel_help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 474px;
+    height: 828px;
+    border: 2px solid #8DB1AB;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.painel_help h2 {
+    font-size: 38px;
+    color: #8DB1AB;
+}
+
+.help_list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 382px;
+    height: 55px;
+    padding: 0 20px;
+    margin: 75px auto;
+    background-color: #8DB1AB;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*----- Frequentes-----*/
+.painel_question {
+    display: flex;  /* <---------- aqui tem que alterar o display para flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 782px;
+    height: 828px;
+    border: 2px solid #8DB1AB;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.painel_question h2 {
+    font-size: 38px;
+    color: #8DB1AB;
+}
+
+.question_list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 656px;
+    height: 92px;
+    padding: 0 20px;
+    margin: 20px auto;
+    background-color: #8DB1AB;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/*-----Painel Sobre-----*/
+.painel_about {
+    display: none;  /* <---------- aqui tem que alterar o display para flex*/
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 35px;
+    width: 782px;
+    height: 828px;
+    border: 2px solid #8DB1AB;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.painel_about h2 {
+    font-size: 2.5rem;
+    color: #8DB1AB;
+}
+
+.about_content {
+    width: 656px;
+    height: 560px;
+}
+
+.about_top {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 92px;
+    background-color: #086788;
+    border-radius: 10px 10px 0 0;
+}
+
+.about_top h2 {
+    color: black;
+    font-size: 2.2rem;
+}
+
+.about_text {
+    padding: 20px;
+    max-height: 600px;
+    font-size: 16px;
+    background-color: #8DB1AB;
+    border-radius: 0 0 10px 10px;
+    text-align: justify;
+    font-size: 1.4rem;
+    text-indent: 15px;
+}
+
+/*-----Painel Feedback-----*/
+#painel_feedback {
+    display: none;  /* <---------- aqui tem que alterar o display para flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 782px;
+    height: 828px;
+    border: 2px solid #8DB1AB;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#painel_feedback h2 {
+    font-size: 2rem;
+    color: #8DB1AB;
+}
+
+.feedback_content {
+    width: 656px;
+    height: 560px;
+}
+
+.feedback_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 92px;
+    background-color: #086788;
+    border-radius: 10px 10px 0 0;
+    color: black;
+}
+
+.feedback_text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    height: 468px;
+    font-size: 16px;
+    background-color: #8DB1AB;
+    border-radius: 0 0 10px 10px;
+    text-align: justify;
+}
+
+.input_info {
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    width: 362px;
+    height: 38px;
+    background-color: #D9D9D9;
+    box-shadow: inset 0px 2px 3px gray;
+    font-size: 1.2rem;
+}
+
+.input_info:focus {
+    outline: none;
+    border: none;
+}
+
+#input_feedback {
+    padding: 14px;
+    width: 594px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    box-shadow: inset 0px 2px 3px gray;
+    padding-top: -10px;
+    font-size: 1.2rem;
+    resize: none;
+}
+
+#input_feedback:focus {
+    outline: none;
+    border: none;
+}
+
+.btnFeedback {
+    width: 92px;
+    height: 32px;
+    border: none;
+    border-radius: 10px;
+    background-color: #086788;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 2px 3px black;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 24px;
+}
+
+/*-----Painel Nexus Chat-----*/
+#painel_nexusChat {
+    display: none; /* <---------- aqui tem que alterar o display para flex*/
+    flex-direction: column;
+    width: 694px;
+    height: 828px;
+    background-color: #086788;
+    border-radius: 15px;
+}
+
+.nexusChat_top {
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px;
+    font-size: 1.5rem;
+}
+
+.nexusChat_gap {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.nexusChat_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 574px;
+    height: 514px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #8DB1AB;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ------- mensagem do usuário ------ */
+
+#userMessage {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}   
+
+.back_circle {
+    padding: 5px; 
+    background-color: black; 
+    border-radius: 50%;
+}
+
+#userMessageChat {
+    display: flex;
+    align-items: start;
+    padding: 8px;
+    max-width: 100%;
+    border-radius: 15px 0 15px 15px;
+    font-size: 1.4rem;
+    color: black;
+    background-color: #D9D9D9;
+}
+
+/* ------- mensagem do suporte nexus ------ */
+
+#suportMessage {
+    display: flex;
+    justify-content: start;
+    gap: 12px;
+}   
+
+.suport_icon_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#suportMessageChat {
+    display: flex;
+    align-items: start;
+    padding: 8px;
+    max-width: 100%;
+    border-radius: 0 15px 15px 15px;
+    font-size: 1.4rem;
+    color: black;
+    background-color: #8DB1AB;
+}
+
+/* ------- input de mensagem do usuário ------ */
+.nexusChat_message {
+    width: 574px;
+    margin: 0 auto;
+}
+
+.nexusChat_input {
+    padding: 10px;
+    width: 574px;
+    height: 118px;
+    border-radius: 15px 15px 0 0;
+    background-color: #D9D9D9;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    border-style: none;
+    resize: none;
+}
+
+.nexusChat_input:focus {
+    outline: none;
+    border: none;
+  }
+
+.nexusChat_input::placeholder {
+    font-size: 1.6rem;
+}
+
+.input_tolls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 40px;
+    border-radius: 0 0 15px 15px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+.btnTolls {
+    display: flex;
+    gap: 10px;
+}
+
+
+#btnAttachment {
+    background-color: none;
+    border: none;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+#btnAttachment:hover {
+    box-shadow: 1px 1px 4px gray;
+}
+
+#btnEmoji {
+    background-color: none;
+    border: none;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+#btnEmoji:hover {
+    box-shadow: 1px 1px 4px gray;
+}
+
+#btnSendChatNexus {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #BEBCBC;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#btnSendChatNexus:hover {
+    box-shadow: 1px 1px 5px gray;
+}
+
+button, #showMenu {
+    cursor: pointer;
+}

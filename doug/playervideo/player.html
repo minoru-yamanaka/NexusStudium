@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="../../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade</title>
+    <link rel="stylesheet" href="../../components/sidebar/sidebar.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <aside class="sidebar ocult-sidebar">
+        <header class="flex">
+            <img src="../../img/logomarca-png.png" width="150px" height="150px" />
+        </header>
+        <ul>
+            <li>
+                <a href="../../login-page/index.html"><button type="button" onclick="onClick(this)">
+                        <i class="ai-home-alt1"></i>
+                        <p>Início</p>
+                    </button></a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-person-check"></i>
+                    <p>Perfil</p>
+                    <i class="ai-chevron-down-small"></i>
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="../../user/historic/index.html">
+                                <button type="button">Histórico</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../user/who-follow/index.html">
+                                <button type="button">Quem eu sigo</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../user/favorite-roads/index.html">
+                                <button type="button">Trilhas favoritas</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li> <!-- ============= MARCOS =============== -->
+                <a href="../../doug/article/article.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-book-open"></i>
+                        <p>Artigos</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../../doug/exercises/exercises.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-folder-add"></i>
+                        <p>Exercícios</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../../doug/comunity/comunity.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-people-group"></i>
+                        <p>Comunidade</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="../../user/historic/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-statistic-up"></i>
+                        <p>Progresso</p>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-question"></i>
+                    <p>Ajuda</p>
+                    <i class="ai-chevron-down-small"></i>
+
+                </button>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Perguntas Frequentes</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Sobre</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Feedback</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../doug/help/help-page.html">
+                                <button type="button">Suporte</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button type="button" onclick="onClick(this)">
+                    <i class="ai-language"></i>
+                    <p>Idiomas</p>
+                </button>
+            </li>
+            <li>
+                <a href="../../user-settings/user-information/index.html">
+                    <button type="button" onclick="onClick(this)">
+                        <i class="ai-gear"></i>
+                        <p>Configurações</p>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <header>
+        <nav>
+            <ul class="grid-header">
+                <li class="menu-btn">
+                    <img class="menu-icon" id="showMenu" src="../img/logomarca-png.png" alt="Logomarca do Nexus Studium">
+                </li>
+                <li class="search-bar">
+                    <div>
+                        <form class="bg-search">
+                            <button class="search-button" type="submit"><i
+                                    class="search-icon fa-2x fa-solid fa-magnifying-glass"></i></button>
+                            <input class="search-input" type="text" placeholder="O que você quer aprender?">
+                        </form>
+                    </div>
+                </li>
+                <li class="user-button">
+                    <div class="flex user-page">
+                        <a href="../../user/historic/index.html">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="nav_video">
+            <a href="#"><button>Vídeo Anterior</button></a>
+
+            <a href="#"><button>Próximo Vídeo</button></a>
+        </div>
+
+        <div class="main-painel">
+            <section class="playlist-section">
+                <div class="head-playlist">
+                    <h2>Playlist</h2>
+                </div>
+
+                <div class="playlist-content">
+                    <ul class="playlist-list">
+                        <li class="button-playlist"><a href="#">Vídeo 01</a></li>
+                        <li class="button-playlist"><a href="#">Vídeo 02</a></li>
+                        <li class="button-playlist"><a href="#">Vídeo 03</a></li>
+                        <li class="button-playlist"><a href="#">Vídeo 04</a></li>
+                        <li class="button-playlist"><a href="#">Vídeo 05</a></li>
+                        <li class="button-playlist"><a href="#">Vídeo 06</a></li>
+                        <li class="button-playlist"><a href="#">Vídeo 07</a></li>
+                        <li class="button-playlist"><a href="#">Vídeo 08</a></li>
+                        <li class="button-playlist"><a href="#">Vídeo 09</a></li>
+                        <li class="button-playlist"><a href="#">Vídeo 10</a></li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <section class="video-section">
+                <div class="video-background">
+                    <iframe width="670" height="462" src="https://www.youtube.com/embed/S9uPNppGsGo?si=oaIETrZ4dvWpSGgj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+
+                <div class="video-title">
+                    <h2>Iniciando PHP - Conhecendo seus Itens e Programando pela Primeira Vez</h2>
+                </div>
+
+                <div class="info-title">
+                    <ul class="info-social">
+                        <li><a href="#"><i class="fa-brands fa-linkedin fa-x" style="color: #000000;"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-instagram fa-1x" style="color: #000000;"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github fa-1x" style="color: #000000;"></i></a></li>
+                    </ul>
+
+                    <h2 class="autor-information">
+                        <i class="fa-solid fa-circle-user" style="color: #000000;"></i>
+                        <a id="autor-link" href="#">Junim Pro do PHP</a>
+                    </h2>
+
+                    <ul class="video-review">
+                        <li><i class="fa-regular fa-star" style="color: #000000;"></i></li>
+                        <li><i class="fa-regular fa-star" style="color: #000000;"></i></li>
+                        <li><i class="fa-regular fa-star" style="color: #000000;"></i></li>
+                        <li><i class="fa-regular fa-star" style="color: #000000;"></i></li>
+                        <li><i class="fa-regular fa-star" style="color: #000000;"></i></li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="comment-section">
+                <div class="head-comment">
+                    Comentários
+                </div>
+
+                <div class="foot-comment">
+                    <input type="text" placeholder="Comente aqui">
+
+                    <button><i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i></a></button>
+
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="links">
+            <div class="help-footer">
+                <a href="#">Ajuda - Perguntas Frequentes</a>
+            </div>
+            <div class="payment-footer">
+                <a href="#">Formas de Pagamento</a>
+            </div>
+            <div class="social-media-footer">
+                <a href="#">Contatos e Redes Sociais</a>
+            </div>
+        </div>
+        <div class="autores">
+            <p> Site feito por: Lucas Morais - Marcos Vinícius - Douglas Balbino - João Victor - Adenilça Souza</p>
+            <p>Copyright &copy; Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="../../components/sidebar/sidebar.js"></script>
+</body>
+</html>
